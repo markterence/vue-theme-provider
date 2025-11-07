@@ -1,3 +1,11 @@
+
+<p align="center">
+  <a href="https://npmjs.com/package/@hirameki/vue-theme-provider">
+    <img src="https://badgen.net/npm/v/@hirameki/vue-theme-provider?color=orange" alt="npm package">
+  </a>
+</p>
+<br/>
+
 # vue-theme-provider
 
 A Vue 3 utility for updating the class attribute on the HTML element based on the current theme (light/dark/custom). This also saves the user's theme preference in localStorage.

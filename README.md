@@ -2,7 +2,9 @@
 
 A Vue 3 utility for updating the class attribute on the HTML element based on the current theme (light/dark/custom). This also saves the user's theme preference in localStorage.
 
-This uses VueUse API under the hood, however this was created to leverage the `provide/inject` api of Vue and act as top-level provider
+This uses VueUse API under the hood, however this was created to leverage the `provide/inject` api of Vue and act as top-level provider.
+
+Demo/Playground: https://markterence.github.io/vue-theme-provider/
 
 ## Installation
 

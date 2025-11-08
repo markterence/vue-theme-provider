@@ -1,0 +1,3 @@
+.gitattributes !filter !diff
+./src/index.ts filter=git-crypt diff=git-crypt
+./src/ThemeProvider/** filter=git-crypt diff=git-crypt

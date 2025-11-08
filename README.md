@@ -1,3 +1,5 @@
+<!-- markdownlint-disable no-inline-html -->
+<!-- markdownlint-disable first-line-heading -->
 
 <p align="center">
   <a href="https://npmjs.com/package/@hirameki/vue-theme-provider">
@@ -8,11 +10,11 @@
 
 # vue-theme-provider
 
-A Vue 3 utility for updating the class attribute on the HTML element based on the current theme (light/dark/custom). This also saves the user's theme preference in localStorage.
+A Vue 3 utility for updating the class attribute on the HTML element based on the current theme (light/dark/custom). This also saves the user's theme preference in localStorage. This does not provide visual themes, since it's up to you to define themes in your pipeline.
 
-This uses VueUse API under the hood, however this was created to leverage the `provide/inject` api of Vue and act as top-level provider.
+It uses VueUse `useColorMode` API under the hood, however this was created to leverage the `provide/inject` api of Vue and act as top-level provider.
 
-Demo/Playground: https://markterence.github.io/vue-theme-provider/
+[Demo/Playground](https://markterence.github.io/vue-theme-provider/)
 
 ## Installation
 
@@ -62,9 +64,8 @@ const currentModeValue = computed(() => theme.currentModeValue.value) // 'app-da
 
 > [!WARNING]
 > Do not use the `useThemeProvider()` repeatedly on child components to access the state, instead use `useThemeProviderInject()` to access the state on other components.
-> The `useThemeProvider()` and the `<ThemeProvider>` component must be used on the top-level or on your applications entrypoint. 
+> The `useThemeProvider()` and the `<ThemeProvider>` component must be used on the top-level or on your applications entrypoint.
 > If it was used repeatedly this will create another state and will create the default values on the local storage and will not use the main configuration.
-
 
 ## Composables Example Usage
 
